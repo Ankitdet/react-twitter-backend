@@ -1,1 +1,1 @@
-# RichPanel Proof of Concept (POC) Twitter Streaming application.
+# POC for twitter help desk.
