@@ -1,10 +1,7 @@
 const request = require("request");
 const keys = require("../config/keys");
 const sharedFunctions = require("../lib/sharedFunctions");
-const CLIENT_HOME_PAGE_URL =
-  window.location.origin === "https://react-twitter-frontend.herokuapp.com"
-    ? "https://react-twitter-backend-new.herokuapp.com"
-    : "http://localhost:5000";
+const CLIENT_HOME_PAGE_URL = 'https://react-twitter-backend-new.herokuapp.com';
 
 module.exports = {
   getToken: async (req, res, next) => {
