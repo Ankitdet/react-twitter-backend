@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client"
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "nodejs",
@@ -35,9 +33,22 @@
     "twit": "^2.2.11",
     "twitter-webhooks": "^0.3.3"
   },
-  "author": "Sagar Kharabe",
-  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
