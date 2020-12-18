@@ -11,10 +11,7 @@ const SESSION = {
 
 const ENV = process.env.NODE_ENV;
 
-const SERVER_URL =
-window.location.origin === "https://react-twitter-frontend.herokuapp.com"
-    ? "https://react-twitter-backend-new.herokuapp.com"
-    : "http://localhost:5000";
+const SERVER_URL = 'https://react-twitter-backend-new.herokuapp.com';
 
 const SOCKET_URL = "127.0.0.1";
 
